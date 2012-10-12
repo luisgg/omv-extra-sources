@@ -1,0 +1,7 @@
+omv-extra-sources (0+svn21-0aurex1) precise; urgency=low
+
+  * Initial release.
+  * Upstream snapshot based on 'trunk' revision 21 (2012-10-12)
+  * Rebuild for aurex 12.04
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Fri, 12 Oct 2012 11:29:14 +0200

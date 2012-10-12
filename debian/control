@@ -1,0 +1,22 @@
+Source: omv-extra-sources
+Section: devel
+Priority: optional
+Maintainer: Luis Antonio Garcia Gisbert <luisgg@gmail.com>
+Build-Depends: debhelper (>= 7.0)
+Standards-Version: 3.9.3
+
+Package: omv-extra-sources
+Architecture: all
+Depends: ${misc:Depends}
+Description: additional source tarballs for openmediavault packaging
+ Ths is just a tricky Build-Depends for some openmediavault project packages:
+ jsl, php-json-schema, libjs-extjs3, libjs-extjs3-xtheme-azenis,
+ libjs-extjs3-xtheme-gray-extend and libjs-extjs3-xtheme-slate.
+ The source code of this packages is not include in the svn's package directory,
+ nor under 'tarballs' standard dir, but in an arbitrary 'sources' directory .
+ In addition, most of the files are compressed as zip files, so it's not possible
+ to upload them directly as part of standard debian source pacges.
+ All the tarballs had been packaged together and the installation directory is
+ '/usr/share/omv-extra-sources/sources'. This allows an "omv-custom-svn-dir-structure"
+ independent packaging schema, simplifies the tracking of upstream changes, and
+ minimizes changes from the (dislikely) original package rules.
